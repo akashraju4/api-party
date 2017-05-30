@@ -5,7 +5,11 @@ class PokemonName extends Component {
      state = {
          poke: {
              name: '',
+             id: '',
+             weight: '',
              height: '',
+
+
          }
      }
      constructor(props) {
@@ -28,8 +32,10 @@ class PokemonName extends Component {
         const { poke } = this.state
         return (
             <div className="poke-name">
-                <h2>{poke.name}</h2>
-                <h3>height: {poke.height}</h3>
+                <h2>Name: {poke.name}</h2>
+                <h3>id: #{poke.id}</h3>
+                <h3>weight: {poke.weight} lbs</h3>
+                <h3>height: {poke.height} in</h3>
             </div>
         )
     }
