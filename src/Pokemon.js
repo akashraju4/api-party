@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import './Pokemon.css'
 
 class Pokemon extends Component {
     state = {
