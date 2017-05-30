@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './PokemonName.css'
 
 
 class PokemonName extends Component {
@@ -32,8 +33,12 @@ class PokemonName extends Component {
         const { poke } = this.state
         return (
             <div className="poke-name">
-                <h2>Name: {poke.name}</h2>
-                <h3>id: #{poke.id}</h3>
+                <h1 className="intro">
+                    <img className="ball" src="https://vignette3.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807" alt=""/>
+                    Name: {poke.name}
+                    <img className="ball" src="https://vignette3.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807" alt=""/>
+                </h1>
+                <h3 className="id">id: #{poke.id}</h3>
                 <h3>weight: {poke.weight} lbs</h3>
                 <h3>height: {poke.height} in</h3>
             </div>

@@ -1,0 +1,9 @@
+img.ball {
+    width: 40px;
+}
+.poke-name {
+    text-transform: capitalize;
+}
+.intro {
+    font-size: 40px;
+}
