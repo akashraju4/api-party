@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Route } from 'react-router-dom'
+import PokemonName from './PokemonName'
 import './Pokemon.css'
 
 class Pokemon extends Component {
@@ -26,7 +27,7 @@ class Pokemon extends Component {
                     <div>
                         <input 
                             type="text" 
-                            value={this.state.username}
+                            value={this.state.name}
                             onChange={this.handleChange}
                         />
                     </div>
@@ -37,7 +38,7 @@ class Pokemon extends Component {
 
                 <Route exact path="/pokemon" render={() => 
                     <h3>Please enter a pokemon name</h3>} />
-                {/*<Route path="/github/:username"  component={GithubUser}/>*/}
+                <Route path="/pokemon/:name"  component={PokemonName}/>
             </div>
         )
     }
