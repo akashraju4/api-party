@@ -9,6 +9,7 @@ class PokemonName extends Component {
              id: '',
              weight: '',
              height: '',
+             base_experience: ''
 
 
          }
@@ -41,6 +42,8 @@ class PokemonName extends Component {
                 <h3 className="id">id: #{poke.id}</h3>
                 <h3>weight: {poke.weight} lbs</h3>
                 <h3>height: {poke.height} in</h3>
+                <h3>base experience: {poke.base_experience}</h3>
+
             </div>
         )
     }
